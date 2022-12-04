@@ -8,6 +8,8 @@ import { ViewproductComponent } from './viewproduct/viewproduct.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
+
 
 
 const myroutes=[
@@ -26,7 +28,9 @@ const myroutes=[
     BrowserModule,
     AppRoutingModule,
   RouterModule.forRoot(myroutes),
-  FormsModule
+  FormsModule,
+  HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
